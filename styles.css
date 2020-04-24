@@ -1,16 +1,29 @@
+* {margin: 0; padding: 0}
+
 body {
     font-family: 'Montserrat', sans-serif;
 }
 
-.logo {
-    font-size: 72pt;
+.wrapper {
+    text-align: center;
 }
 
-.sublogo {
-    font-size: 40pt;
+.title {
+    margin-top: 40px;
+    font-weight: 500;
+    font-size: 30pt;
+    color: #1d1d1d;
+}
+
+.subtitle {
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 12pt;
+    color: #6d6d6d;
 }
 
 .social-links {
+    margin: 20px 0;
     cursor: default;
 }
 
