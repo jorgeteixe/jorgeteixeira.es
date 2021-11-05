@@ -53,3 +53,9 @@ a > span {
 .mention:hover {
     color: rgb(15, 89, 146);
 }
+
+@media (max-width: 600px) {
+    body {
+        font-size: 1em;
+    }
+}
