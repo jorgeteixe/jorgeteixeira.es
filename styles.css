@@ -1,84 +1,47 @@
-* {margin: 0; padding: 0}
+* { margin: 0; padding: 0 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(252, 250, 248);
+    font-family: sans-serif;
+    font-size: 1.1em;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.wrapper {
-    text-align: center;
+.container {
+    max-width: 700px;
+    margin: 0 7.5%;
 }
 
-.title {
-    margin-top: 40px;
-    font-weight: 500;
-    font-size: 30pt;
-    color: #1d1d1d;
+p {
+    margin: 15px 0;
+    line-height: 1.4em;
 }
 
-.subtitle {
-    margin-top: 10px;
-    font-weight: 500;
-    font-size: 12pt;
-    color: #6d6d6d;
+a, a:active {
+    color: rgb(92, 92, 78);
+    text-decoration: none;
+    border-bottom: 0.05em solid;
+    border-color: rgba(55, 53, 47, 0.4);
+    opacity: 0.7;
 }
 
-.social-links {
-    margin: 20px 0;
-    cursor: default;
+.mention > a {
+    color: inherit;
+    border: none;
 }
 
-.social-links > a {
-    color: black !important;
-    padding: 3px;
-    margin: 0 7px;
-}
-
-.call2action {
-    display: inline-block;
-    padding: 10px 20px;
+.mention {
     cursor: pointer;
-    border: 2px solid black;
-    color: black;
+    padding: 0 2px 1px 2px;
+    border-radius: 3px;
+    color: rgb(18, 100, 163);
+    background: rgba(145, 188, 253, 0.4);
 }
 
-/* https://github.com/IanLunn/Hover/blob/master/css/hover.css */
-/* Sweep To Top */
-.hvr-sweep-to-top {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    position: relative;
-    -webkit-transition-property: color;
-    transition-property: color;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-}
-.hvr-sweep-to-top:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: #3b3b3b;
-    -webkit-transform: scaleY(0);
-    transform: scaleY(0);
-    -webkit-transform-origin: 50% 100%;
-    transform-origin: 50% 100%;
-    -webkit-transition-property: transform;
-    transition-property: transform;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
-}
-.hvr-sweep-to-top:hover, .hvr-sweep-to-top:focus, .hvr-sweep-to-top:active {
-    color: white;
-}
-.hvr-sweep-to-top:hover:before, .hvr-sweep-to-top:focus:before, .hvr-sweep-to-top:active:before {
-    -webkit-transform: scaleY(1);
-    transform: scaleY(1);
+.mention:hover {
+    color: rgb(15, 89, 146);
 }
