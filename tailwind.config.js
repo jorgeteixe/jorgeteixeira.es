@@ -7,6 +7,9 @@ module.exports = {
     fontFamily: {
       sans: 'Nunito'
     },
+    colors: {
+      back: '#F3F4F5'
+    },
     extend: {}
   },
   plugins: []
