@@ -5,12 +5,13 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      sans: 'Nunito'
+      sans: 'Inter'
     },
-    colors: {
-      back: '#F3F4F5'
-    },
-    extend: {}
+    extend: {
+      colors: {
+        primary: '#fea634'
+      }
+    }
   },
   plugins: []
 }
