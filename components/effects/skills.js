@@ -1,11 +1,25 @@
+import React from 'react'
 import { motion } from 'framer-motion'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 function Skills({ skills }) {
-  const variants = {}
+  const [audio, setAudio] = useState(null)
+
+  useEffect(() => {
+    const _audio = new Audio('/click.mp3')
+    _audio.volume = 0.3
+    setAudio(_audio)
+  }, [])
 
   const [current, setCurrent] = useState(0)
   const [clicks, setClicks] = useState(0)
+
+  const click = () => {
+    audio.play()
+    clicks < 3
+      ? setClicks(clicks + 1)
+      : setCurrent((current + 1) % skills.length)
+  }
 
   return (
     <motion.span
@@ -17,11 +31,7 @@ function Skills({ skills }) {
         scale: 0.99,
         transition: { duration: 0.2 }
       }}
-      onClick={() =>
-        clicks < 3
-          ? setClicks(clicks + 1)
-          : setCurrent((current + 1) % skills.length)
-      }
+      onClick={click}
       className="hover:text-primary hover:cursor-pointer transition-colors inline-block select-none"
     >
       {skills[current]}
