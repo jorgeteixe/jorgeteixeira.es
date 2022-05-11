@@ -4,7 +4,7 @@ function Seo({ title }) {
   return (
     <Head>
       <title>
-        Jorge Teixeira |{' '}
+        Jorge Teixeira —{' '}
         {title || 'Creator. Mentor. Tech advocate based in Galicia.'}
       </title>
       <meta

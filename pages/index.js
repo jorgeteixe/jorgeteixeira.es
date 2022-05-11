@@ -1,24 +1,40 @@
 import Seo from '../components/seo'
 import Navbar from '../components/navbar'
-import Rotate from '../components/effects/rotate'
-import Bounce from '../components/effects/bounce'
+import Skills from '../components/effects/skills'
+import BizAway from '../components/effects/bizaway'
 
 export default function Home() {
+  const skills = [
+    'technology',
+    'JavaScript',
+    'containers',
+    'React',
+    'Kubernetes',
+    'AWS',
+    'Linux',
+    'MongoDB'
+  ]
+
   return (
     <>
       <Seo />
-      <div className="h-screen flex flex-col bg-black text-white pt-8 px-8 select-none">
-        <div className="max-w-4xl">
-          <p className="text-5xl sm:text-6xl md:text-8xl font-medium">
-            I&apos;m Jorge, I love building <Bounce>cool</Bounce> stuff with
-            technology.
+      <div className="h-screen flex flex-col bg-black text-gray-50 select-none">
+        <div className="max-w-4xl p-10 sm:p-20">
+          <p className="text-5xl sm:text-6xl md:text-8xl mb-3 font-bold">
+            I&apos;m Jorge.
           </p>
-          <p className="text-5xl sm:text-6xl md:text-8xl font-medium mt-6">
-            I <Rotate>help</Rotate> others do it too.
+          <p className="text-4xl sm:text-5xl font-semibold md:text-7xl text-gray-400 mb-4">
+            I use <Skills skills={skills} /> <br className="inline sm:hidden" />
+            to <br className="hidden sm:inline" /> build great things.
+          </p>
+          <p className="text-3xl sm:text-4xl font-semibold md:text-6xl text-gray-600">
+            Currently at <BizAway />.
           </p>
         </div>
         <div className="grow" />
-        <Navbar />
+        <div className="pb-8 max-w-4xl ">
+          <Navbar />
+        </div>
       </div>
     </>
   )
