@@ -19,7 +19,7 @@ export default function Home() {
     <>
       <Seo />
       <div className="h-screen flex flex-col bg-black text-gray-50 select-none">
-        <div className="max-w-4xl p-10 sm:p-20">
+        <div className="max-w-4xl p-9 sm:p-20">
           <p className="text-5xl sm:text-6xl md:text-8xl mb-3 font-bold">
             I&apos;m Jorge.
           </p>
@@ -31,7 +31,7 @@ export default function Home() {
             Currently at <BizAway />.
           </p>
         </div>
-        <div className="grow" />
+        <div className="mt-60 sm:grow sm:mt-0" />
         <div className="pb-8 max-w-4xl ">
           <Navbar />
         </div>
