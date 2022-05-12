@@ -5,6 +5,7 @@ function Draggable({ children }) {
   const constraintsRef = useRef(null)
   return (
     <motion.span
+      whileTap={{ scale: 0.95 }}
       ref={constraintsRef}
       drag
       dragConstraints={constraintsRef}
