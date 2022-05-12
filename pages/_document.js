@@ -18,7 +18,7 @@ class MyDocument extends Document {
           <script
             defer
             data-domain="jorgeteixeira.es"
-            src="https://plausible.io/js/plausible.js"
+            src="/js/script.js"
           ></script>
         </Head>
         <body>
