@@ -3,6 +3,7 @@ import Navbar from '../components/navbar'
 import Skills from '../components/effects/skills'
 import BizAway from '../components/effects/bizaway'
 import Appear from '../components/effects/appear'
+import Draggable from '../components/effects/draggable'
 
 export default function Home() {
   const skills = [
@@ -23,7 +24,7 @@ export default function Home() {
         <div className="max-w-4xl p-9 sm:p-20">
           <Appear>
             <p className="text-5xl sm:text-6xl md:text-8xl mb-3 font-bold">
-              I&apos;m Jorge.
+              I&apos;m <Draggable>Jorge</Draggable>.
             </p>
           </Appear>
           <Appear delay={0.1}>
