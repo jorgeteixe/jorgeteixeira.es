@@ -1,28 +1,20 @@
-import Link from 'next/link'
+import Logo from './logo'
+import NavLink from './navlink'
 
 function Navbar() {
   return (
-    <div className="flex flex-col sm:flex-row px-8 sm:px-0 justify-around font-medium text-gray-400 ">
-      <Link href="https://github.com/jorgeteixe" passHref>
-        <a className="mt-2 sm:mt-0 hover:text-white transition-colors">
-          GitHub
-        </a>
-      </Link>
-      <Link href="https://www.linkedin.com/in/jorge-teixeira-crespo">
-        <a className="mt-2 sm:mt-0 hover:text-[#0e76a8] transition-colors">
-          LinkedIn
-        </a>
-      </Link>
-      <Link href="https://twitter.com/jorgeteixe_">
-        <a className="mt-2 sm:mt-0 hover:text-[#1DA1F2] transition-colors">
-          Twitter
-        </a>
-      </Link>
-      <Link href="https://instagram.com/jorgeteixe_">
-        <a className="mt-2 sm:mt-0 hover:text-[#C13584] transition-colors">
-          Instagram
-        </a>
-      </Link>
+    <div className="h-[100px] mx-8 flex justify-between">
+      <div className="flex flex-col justify-center">
+        <Logo href="/" />
+      </div>
+      <div className="flex flex-col justify-center">
+        <div className="invisible sm:visible">
+          <NavLink text="Inicio" href="/" />
+          <NavLink text="Contenido" href="/contenido" />
+          <NavLink text="Sobre mi" href="/sobre-mi" />
+          <NavLink text="Contacto" href="/contacto" />
+        </div>
+      </div>
     </div>
   )
 }
