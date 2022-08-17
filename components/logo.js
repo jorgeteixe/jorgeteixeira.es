@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 function Logo({ href, rotate = true }) {
   let logo = (
     <Image
+      priority={true}
       src="/logo.png"
       height={40}
       width={40}
