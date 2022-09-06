@@ -3,6 +3,14 @@ module.exports = {
     './pages/**/*.{js,ts,jsx,tsx}',
     './components/**/*.{js,ts,jsx,tsx}'
   ],
+  safelist: [
+    'shadow-primary',
+    'shadow-secondary',
+    'shadow-yellow',
+    'bg-primary',
+    'bg-secondary',
+    'bg-yellow'
+  ],
   theme: {
     fontFamily: {
       sans: 'Inter'

@@ -15,7 +15,7 @@ function Featured() {
         />
         <Content
           href="#"
-          category="artículo"
+          category="articulo"
           color="secondary"
           text="Cómo empezar a usar un gestor de contraseñas"
         />
