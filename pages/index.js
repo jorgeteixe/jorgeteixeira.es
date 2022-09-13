@@ -1,4 +1,5 @@
 import Featured from '../components/featured'
+import Footer from '../components/footer'
 import Hero from '../components/hero'
 import Navbar from '../components/navbar'
 import Seo from '../components/seo'
@@ -17,6 +18,7 @@ export default function Home() {
           </div>
         </div>
         <Featured />
+        <Footer />
       </div>
     </>
   )

@@ -4,7 +4,7 @@ import NavLink from './navlink'
 
 function Navbar() {
   return (
-    <div className="h-[100px] mx-8 flex justify-between">
+    <div className="h-[90px] mx-8 flex justify-between">
       <div className="flex flex-col justify-center">
         <Logo href="/" />
       </div>
