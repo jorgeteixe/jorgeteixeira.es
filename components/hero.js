@@ -13,8 +13,7 @@ function Hero() {
       <h1 className="font-bold text-4xl sm:text-6xl">Jorge Teixeira</h1>
       <p className="text-sm sm:text-lg my-4">
         Lorem ipsum dolor sit amet — consectetur adipiscing elit. Nam dignissim
-        - justo ut porttitor interdum, lacus erat auctor & a rhoncus velit urna
-        eget dolor. Pellentesque eget.
+        - justo ut porttitor interdum. Pellentesque eget.
       </p>
       <Link href="/sobre-mi">
         <a className="underline text-gray-500 hover:text-gray-700 text-sm sm:text-base">

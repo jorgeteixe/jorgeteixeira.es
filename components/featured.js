@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Content from './content'
 
 function Featured() {
@@ -31,6 +32,11 @@ function Featured() {
           color="yellow"
           text="Llama la atención en LinkedIn con estos pasos"
         />
+      </div>
+      <div className="underline text-gray-500 hover:text-gray-700 text-sm sm:text-base flex justify-end mr-7 my-2 cursor-pointer">
+        <Link href="/contenido">
+          <a>Ver todo →</a>
+        </Link>
       </div>
     </div>
   )
