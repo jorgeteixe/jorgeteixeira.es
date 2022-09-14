@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 
 function Hero() {
@@ -9,6 +10,14 @@ function Hero() {
             @jorgeteixe_
           </a>
         </Link>
+      </div>
+      <div className="float-right mr-10">
+        <Image
+          src="/arrow.svg"
+          height={70}
+          width={50}
+          alt="Arrow pointing Instagram link."
+        />
       </div>
       <h1 className="font-bold text-4xl sm:text-6xl">Jorge Teixeira</h1>
       <p className="text-sm sm:text-lg my-4">
