@@ -1,32 +1,7 @@
 import Link from 'next/link'
 import { useState } from 'react'
 
-function Content({ href, text, category, color }) {
-  const course = (
-    <p className={'inline-block bg-primary text-white px-1 rounded'}>curso</p>
-  )
-  const article = (
-    <p className={'inline-block bg-secondary text-white px-1 rounded'}>
-      artículo
-    </p>
-  )
-  const snippet = (
-    <p className={'inline-block bg-yellow text-white px-1 rounded'}>snippet</p>
-  )
-
-  let badge
-  switch (category) {
-    case 'curso':
-      badge = course
-      break
-    case 'articulo':
-      badge = article
-      break
-    case 'snippet':
-      badge = snippet
-      break
-  }
-
+function Content({ href, text, category, color, showBadge = true }) {
   return (
     <Link href={href} passHref>
       <a
@@ -34,9 +9,11 @@ function Content({ href, text, category, color }) {
       >
         <div className="p-3 h-full flex flex-col justify-between">
           <div className="flex justify-end">
-            <p className={`inline-block bg-${color} text-white px-1 rounded`}>
-              {category}
-            </p>
+            {showBadge && (
+              <p className={`inline-block bg-${color} text-white px-1 rounded`}>
+                {category}
+              </p>
+            )}
           </div>
           <p className="text-center font-semibold">{text}</p>
         </div>
