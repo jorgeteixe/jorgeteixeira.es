@@ -3,8 +3,8 @@ import Link from 'next/link'
 
 function Footer() {
   return (
-    <div className="my-6 mx-10 text-gray-800 text-sm sm:text-base flex justify-between">
-      <div className="flex justify-around w-[200px]">
+    <div className="m-6 text-gray-800 text-sm sm:text-base flex justify-between">
+      <div className="flex justify-between w-[200px]">
         <Link href="https://twitter.com/jorgeteixe_">
           <a>
             <Image
