@@ -34,12 +34,9 @@
 </head>
 <body class="bg-gray-100 text-gray-800">
   <div class="p-10 mx-auto max-w-3xl relative">
-    <div class="absolute top-10 right-5">
-      <a href="/" class="text-sm text-blue-900 hover:underline">Página principal</a>
-    </div>
     <div class="text-center">
-      <img src="../img/jorge.jpeg" alt="Jorge Teixeira" class="mx-auto w-48 h-48 rounded-full">
-      <h1 class="text-4xl mt-4 font-bold">Jorge Teixeira</h1>
+      <img src="../img/jorge.webp" alt="Jorge Teixeira" class="mx-auto w-48 h-48 rounded-full">
+      <h1 class="text-4xl mt-4 font-bold hover:underline cursor-pointer"><a href="/">Jorge Teixeira</a></h1>
       <p class="text-lg mt-2">Turning Ideas into Cloud Solutions. 🚀</p>
       <div class="flex justify-center space-x-3 mt-4">
         <a href="https://github.com/jorgeteixe" target="_blank" class="text-lg">👨‍💻 GitHub</a>
@@ -69,12 +66,12 @@
         <div class="mt-2 space-y-6">
           <p>Inicié mi carrera profesional durante un Erasmus de ciclo medio, trabajando en soporte TI y gestionando servicios como Asterisk, un sistema VoIP. Tras varias experiencias laborales que me permitieron desarrollar habilidades diversas, me incorporé al departamento de infraestructura de <a href="https://bizaway.com/es" target="_blank" class="text-blue-900 hover:underline">BizAway</a>. Cuando entré, la facturación anual era de unos 2 millones de euros; este año, ha superado los 80 millones, lo que ha tenido un gran impacto en el tráfico de nuestros servicios informáticos. En BizAway, trabajo con tecnologías cloud en AWS. Principalmente Docker, Kubernetes y herramientas relacionadas con CI/CD y la cultura DevOps.</p>
           <div class="flex flex-col items-center">
-            <img src="../img/noticia-bizaway.jpg" alt="Noticia sobre BizAway en La Voz de Galicia" class="rounded-lg" />
+            <img src="../img/noticia-bizaway.webp" alt="Noticia sobre BizAway en La Voz de Galicia" class="rounded-lg" />
             <small class="mt-2 text-gray-500">Noticia sobre BizAway en La Voz de Galicia.</small>
           </div>
           <p>Además de mi trabajo, destaco por mi activa participación en eventos de la comunidad tecnológica. He participado en el <a href="https://hackupc.com/" target="_blank" class="text-blue-900 hover:underline">HackUPC</a> en varias ocasiones, el mayor hackathon de España, y en la <a href="https://fosdem.org/" target="_blank" class="text-blue-900 hover:underline">FOSDEM</a>, la principal conferencia sobre software libre en Europa. Como presidente de <a href="https://gpul.org/" target="_blank" class="text-blue-900 hover:underline">GPUL</a>, también organizo eventos significativos en Galicia, como el <a href="hhttps://hackudc.gpul.org/" target="_blank" class="text-blue-900 hover:underline">HackUDC</a> y la <a href="https://atlanticaconf.com/" target="_blank" class="text-blue-900 hover:underline">AtlánticaConf</a>, reuniendo a cientos de entusiastas de la tecnología.</p>
           <div class="flex flex-col items-center">
-            <img src="../img/presentar-hackudc.jpeg" alt="Presentación del HackUDC en la Universidad de A Coruña" class="rounded-lg" />
+            <img src="../img/presentar-hackudc.webp" alt="Presentación del HackUDC en la Universidad de A Coruña" class="rounded-lg" />
             <small class="mt-2 text-gray-500">Presentación del HackUDC en la Universidad de A Coruña.</small>
           </div>
         </div>
@@ -83,10 +80,38 @@
         <div class="mt-2 space-y-6">
           <p>He impartido diversos talleres centrados en tecnologías clave como Docker, Kubernetes y AWS, ofreciendo formación práctica y aplicada. También he dado ponencias sobre temas educativos o de orientación profesional, tratando temas como la comparación entre la Formación Profesional y la Universidad o cómo guiar a estudiantes para entrar en el mundo laboral.</p>
           <div class="flex flex-col items-center">
-            <img src="../img/ponencia-docker-teis.jpeg" alt="Ponencia sobre Docker en IES de Teis." class="rounded-lg" />
+            <img src="../img/ponencia-docker-teis.webp" alt="Ponencia sobre Docker en IES de Teis." class="rounded-lg" />
             <small class="mt-2 text-gray-500">Ponencia sobre Docker en IES de Teis con Rodrigo Souto en época COVID 🦠.</small>
           </div>
+          <p>Debajo encontrarás una lista de talleres y ponencias que he preparado en varios temas. Cada uno incluye una descripción detallada y el público objetivo al que está dirigido.</p>
+          <p>Es importante aclarar que estos son solo ejemplos de lo que puedo ofrecer. Para necesidades específicas o temas que no se encuentran en la lista, no dudes en contactarme. Estoy abierto a adaptar o crear nuevas presentaciones según la situación particular.</p>
         </div>
+        <div class="bg-blue-200 rounded-lg my-4 p-3 flex items-center">
+          <div class="text-2xl p-2 mr-2">💬</div>
+          <p>Para cualquier consulta, puedes reservar <a href="https://cal.com/jorgeteixe" target="_blank" class="text-blue-900 hover:underline">una sesión de 30 minutos conmigo</a>.</p>
+        </div>
+        <hr class="border-gray-200 my-6">
+        <h2 class="my-4 text-xl font-bold">📧 Contacto</h2>
+        <form method="POST" action="">
+          <div class="mb-4">
+            <label for="name" class="block text-sm font-medium text-gray-600">Nombre</label>
+            <input type="text" id="name" name="name" placeholder="Elon Musk" class="mt-1 p-2 w-full border rounded-md">
+          </div>
+    
+          <div class="mb-4">
+            <label for="email" class="block text-sm font-medium text-gray-600">Email</label>
+            <input type="email" id="email" name="email" placeholder="elon@tesla.com" class="mt-1 p-2 w-full border rounded-md">
+          </div>
+    
+          <div class="mb-4">
+            <label for="request" class="block text-sm font-medium text-gray-600">Solicitud</label>
+            <textarea id="request" name="request" rows="4" placeholder="Escribe aquí tu solicitud..." class="mt-1 p-2 w-full border rounded-md"></textarea>
+          </div>
+    
+          <button id="submitButton" type="submit" class="bg-blue-500 text-white p-2 rounded-md w-full">
+            Enviar
+          </button>
+        </form>
       </div>
     </div>
     <div class="mt-10 text-center">
@@ -100,5 +125,75 @@
 
   <!-- Scripts -->
   <script src="../script.js"></script>
+  <script>
+    const submitButton = document.getElementById('submitButton');
+    const form = document.querySelector('form');
+    const nameInput = document.getElementById('name');
+    const emailInput = document.getElementById('email');
+    const requestInput = document.getElementById('request');
+
+    async function postData(url = '', data = {}) {
+      const response = await fetch(url, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+      });
+      return response.json();
+    }
+  
+    submitButton.addEventListener('click', async (event) => {
+      event.preventDefault();
+
+      // Remove existing red borders
+      [nameInput, emailInput, requestInput].forEach(input => {
+        input.classList.remove('border-red-500');
+      });
+
+      // Validate fields and add red borders to empty ones
+      let isValid = true;
+      [nameInput, emailInput, requestInput].forEach(input => {
+        if (!input.value.trim()) {
+          input.classList.add('border-red-500');
+          isValid = false;
+        }
+      });
+
+      // Validate email
+      const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+      if (!emailRegex.test(emailInput.value.trim())) {
+        emailInput.classList.add('border-red-500');
+        isValid = false;
+      }
+
+      if (!isValid) {
+        return;
+      }
+
+      // Disable the button and show loading state
+      submitButton.disabled = true;
+      submitButton.textContent = 'Enviando...';
+  
+      // Your form data
+      const data = {
+        name: nameInput.value,
+        email: emailInput.value,
+        request: requestInput.value
+      };
+  
+      // Send POST request
+      try {
+        const result = await postData('https://cloud.jorgeteixeira.es/n8n/webhook/contacto-talleres', data);
+        // Handle success
+        submitButton.textContent = 'Enviado';
+        submitButton.className = 'text-white p-2 rounded-md w-full bg-green-500';
+      } catch (error) {
+        // Handle error (optional)
+        submitButton.textContent = 'Error';
+        submitButton.className = 'text-white p-2 rounded-md w-full bg-red-500';
+      }
+    });
+  </script>
 </body>
 </html>
