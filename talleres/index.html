@@ -213,7 +213,7 @@
   
       // Send POST request
       try {
-        const result = await postData('https://cloud.jorgeteixeira.es/n8n/webhook/contacto-talleres', data);
+        const result = await postData('https://n8n.jorgeteixeira.es/webhook/contacto-talleres', data);
         // Handle success
         submitButton.textContent = 'Enviado';
         submitButton.className = 'text-white p-2 rounded-md w-full bg-green-500';
